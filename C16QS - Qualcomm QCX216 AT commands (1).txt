@@ -1,0 +1,65 @@
+ati
+Manufacturer: Cavli Inc.
+Model Name: C16QS
+Description: LTE CAT1.bis Module
+Firmware Release: V1.2.2
+IMEI: 358773400002895
+Serial Number: QCLC1289J
+HW Version: C16QS_HW_V2.21(2711)
+Part Number: C16QS-EA-GNAH
+Build Date: 20230418
+
+OK
+
++CREG: 1,"A855","01521621",7
+at+cops?
++COPS: 0,2,"22210",7
+
+OK
+AT+CGDCONT?
++CGDCONT: 1,"IP","hubblethings.io","10.252.73.22",,,,,,,,,,,
+
+OK
+AT+PING="8.8.8.8"
+OK
+
+Reply from 8.8.8.8: bytes= 80 time = 194(ms), TTL = 98
+
+Reply from 8.8.8.8: bytes= 80 time = 90(ms), TTL = 96
+
+Reply from 8.8.8.8: bytes= 80 time = 90(ms), TTL = 46
+
+Reply from 8.8.8.8: bytes= 80 time = 90(ms), TTL = 95
+
+Reply from 8.8.8.8: bytes= 80 time = 91(ms), TTL = 98
+
+Ping statistics for 8.8.8.8
+
+Packets: Sent = 5, Received = 5, Loss = 0 <0%>, Max = 194 ms, Min = 90 ms, Avg = 111 ms
+
+AT+HUBBLEMAAS=1,1
+
++HUBBLEMAAS: CONNECTING
+
++HUBBLEMAAS: CONNECTED,0
+
+OK
+AT+HMPUBLM=TeaTest,1,0,0
+> 
++HMPUBLM: PUBLISHING
+
++HMPUBLM: PUBLISH SUCCESS
+
+OK
+AT+HMPUB=TeaTest,Send2,1,0,0
++HMPUB: PUBLISHING
+
++HMPUB: PUBLISH SUCCESS
+
+OK
+AT+HMPUB=TeaTest,Send3,1,0,0
++HMPUB: PUBLISHING
+
++HMPUB: PUBLISH SUCCESS
+
+OK
